@@ -1,0 +1,84 @@
+.container{
+ position: absolute;
+ height: 100%;
+}
+
+
+.navbar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  height: 100%;
+  padding-top: 10rem;
+  border-style:none solid none none ;
+  border-width: 0.5px;
+  background-color: red;
+}
+.guide {
+
+  transition: 2s;
+
+  &:hover {
+    &::before {
+      content: "GUIDE";
+      position: absolute;
+    }
+
+    .guide-name {
+      opacity: 0;
+    }
+
+  }
+}
+
+.home {
+
+  transition: 2s;
+
+  &:hover {
+    &::before {
+      content: "HOME";
+      position: absolute;
+    }
+
+    .home-name {
+      opacity: 0;
+    }
+
+  }
+}
+
+.add {
+
+  transition: 2s;
+
+  &:hover {
+    &::before {
+      content: "ADD";
+      position: absolute;
+    }
+
+    .add-name {
+      opacity: 0;
+    }
+
+  }
+}
+
+
+.link {
+  text-decoration: none;
+  color: black;
+  margin: 1rem;
+}
+
+.signout {
+  position: relative;
+  cursor: pointer;
+  margin-top: 30rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border-style: none;
+
+}

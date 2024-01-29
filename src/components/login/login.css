@@ -1,0 +1,28 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20rem;
+    padding: 0 35%;
+    gap: 1rem;
+}
+
+.login-input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border-style: dashed;
+    transition: all 2s;
+    &:hover{
+        border-style: solid;
+    }
+}
+
+.div-btn{
+    text-align: center;
+}
+
+.login-btn {
+    padding: 0.35rem;
+    margin: 0.3rem;
+    border-radius: 5px;
+    border:1px solid;
+}

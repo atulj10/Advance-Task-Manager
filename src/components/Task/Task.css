@@ -1,0 +1,21 @@
+.task-container {
+    margin: 4rem;
+    margin-top: 0rem;
+    margin-left: 6rem;
+    margin-right: 20%;
+    padding: 2rem;
+    border: solid;
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+.delete {
+    margin-top: 0.75rem;
+    border-radius: 5px;
+    border-style: solid;
+
+}

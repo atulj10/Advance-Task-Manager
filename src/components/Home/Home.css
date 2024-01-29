@@ -1,0 +1,9 @@
+.home-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.Task-container{
+    flex: 10;
+    margin-left: 2rem;
+}

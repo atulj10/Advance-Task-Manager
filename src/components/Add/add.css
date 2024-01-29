@@ -1,0 +1,42 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 30%;
+    gap: 1rem;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input{
+    padding: 0.5rem;
+    border-radius: 5px;
+    border:1px dashed black;
+    cursor: pointer;
+}
+
+textarea{
+    min-height: 10rem;
+}
+
+.submit{
+    cursor: pointer;
+    width: 30%;
+    padding: 0.5rem;
+    border-radius:20px;
+    border-style: none;
+}
+
+.back-link{
+    margin: auto;
+    margin-top: 7rem;
+    padding: 0.35rem;
+    text-align: center;
+    border:1px solid;
+    border-radius: 20px;
+    width: 40%;
+    text-decoration: none;
+}
