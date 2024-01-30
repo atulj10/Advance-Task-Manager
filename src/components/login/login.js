@@ -1,7 +1,8 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './login.css';
 import { auth } from '../../firebase';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
+import videoBg from '../../assets/videos/videobg.mp4'
 
 function Login() {
   const emailRef = useRef(null);
@@ -40,16 +41,19 @@ function Login() {
   };
 
   return (
-    <div >
-      <form className='login-form'>
-        <input className='login-input' ref={emailRef} type='text' placeholder='Email' />
-        <input className='login-input' ref={passwordRef} type='password' placeholder='Password' />
-        <div className='div-btn'>
-          <button className='login-btn'  type="button" onClick={signIn}>Login</button>
-          <button className='login-btn'  type="button" onClick={register}>Register</button>
-        </div>
-      </form>
-    </div>
+    <>
+      <video id='video' src={videoBg} autoPlay muted loop/>
+      <div >
+        <form className="login-form" >
+          <input className='login-input' ref={emailRef} type='text' placeholder='Email' />
+          <input className='login-input' ref={passwordRef} type='password' placeholder='Password' />
+          <div className='div-btn'>
+            <button className='login-btn' type="button" onClick={signIn}>Login</button>
+            <button className='login-btn' type="button" onClick={register}>Register</button>
+          </div>
+        </form>
+      </div>
+    </>
   );
 }
 

@@ -1,28 +1,65 @@
+#video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
 .login-form {
     display: flex;
     flex-direction: column;
-    margin-top: 20rem;
-    padding: 0 35%;
+    position: absolute;
+    left: 25rem;
+    top: 25%;
+    width: 40%;
+    padding: 5rem;
     gap: 1rem;
+    z-index: 2;
+    border-radius: 50px;
+
+    &:hover {
+        -webkit-backdrop-filter: blur(100px);
+        backdrop-filter: blur(50px);
+    }
+
 }
+
 
 .login-input {
     padding: 0.5rem;
     border-radius: 5px;
-    border-style: dashed;
+    border:2px dashed rgb(49, 182, 243);
+    color: rgb(49, 182, 243);
     transition: all 2s;
-    &:hover{
+    background: transparent;
+
+    &::placeholder{
+        color: rgb(8, 207, 241);
+    }
+
+    &:hover {
         border-style: solid;
     }
 }
 
-.div-btn{
+.div-btn {
     text-align: center;
 }
 
 .login-btn {
+    cursor: pointer;
     padding: 0.35rem;
     margin: 0.3rem;
     border-radius: 5px;
-    border:1px solid;
+    border: 1px solid rgb(8, 207, 241);
+    color: rgb(8, 207, 241);
+    background: transparent;
+    
+    &:hover{
+        background-color: rgb(8, 207, 241);
+        color: white;
+    }
 }

@@ -7,3 +7,19 @@
     flex: 10;
     margin-left: 2rem;
 }
+
+.dropdown{
+    position: absolute;
+    right: 10rem;
+    top: 5rem;
+}
+
+.filter-icon{
+    padding-right: 0.3rem;
+}
+
+.select{
+    background: transparent;
+    border-radius: 20px;
+    padding: 0.25rem;
+}

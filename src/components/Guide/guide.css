@@ -1,0 +1,14 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+img{
+    height: 50%;
+    width: 50%;
+    border-radius: 20px;
+}
+

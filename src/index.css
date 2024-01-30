@@ -1,7 +1,9 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-    /* background-color: ; */
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("./assets/893820_O9FG4W0.jpg");
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }

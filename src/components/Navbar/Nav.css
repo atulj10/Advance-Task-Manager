@@ -1,6 +1,6 @@
-.container{
- position: absolute;
- height: 100%;
+.container {
+  position: absolute;
+  height: 100%;
 }
 
 
@@ -11,10 +11,10 @@
   padding: 1rem;
   height: 100%;
   padding-top: 10rem;
-  border-style:none solid none none ;
-  border-width: 0.5px;
-  background-color: red;
+  border: none;
+  background-image: linear-gradient(#ca508d,#d499a8,#ca508d);
 }
+
 .guide {
 
   transition: 2s;
@@ -22,7 +22,9 @@
   &:hover {
     &::before {
       content: "GUIDE";
+      color: #b2dfdc;
       position: absolute;
+      left: 1.4rem;
     }
 
     .guide-name {
@@ -32,14 +34,18 @@
   }
 }
 
+.home-name {
+  opacity: 1;
+}
+
 .home {
 
-  transition: 2s;
-
   &:hover {
-    &::before {
+    &::after {
       content: "HOME";
+      color: #b2dfdc;
       position: absolute;
+      left: 1.4rem;
     }
 
     .home-name {
@@ -49,23 +55,9 @@
   }
 }
 
-.add {
-
-  transition: 2s;
-
-  &:hover {
-    &::before {
-      content: "ADD";
-      position: absolute;
-    }
-
-    .add-name {
-      opacity: 0;
-    }
-
-  }
+.nav-btn {
+  color: #b2dfdc;
 }
-
 
 .link {
   text-decoration: none;
@@ -79,6 +71,16 @@
   margin-top: 30rem;
   padding: 0.5rem;
   border-radius: 10px;
-  border-style: none;
+  border: 2px solid rgb(214, 25, 25);
+  background: transparent;
+  color: rgb(214, 25, 25);
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: rgb(214, 25, 25);
+    color: white;
+
+  }
+
 
 }
