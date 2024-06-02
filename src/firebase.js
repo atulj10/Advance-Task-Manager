@@ -3,12 +3,12 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDRvLspTVW9BwoAXmCj2FsganIwW5cS_jA",
-    authDomain: "task-manager-5d49b.firebaseapp.com",
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
     projectId: "task-manager-5d49b",
     storageBucket: "task-manager-5d49b.appspot.com",
     messagingSenderId: "583847656213",
-    appId: "1:583847656213:web:5f1997ec3185ca8c98471c",
+    appId: process.env.REACT_APP_APPID,
     measurementId: "G-95YE31XV5L"
 };
 
