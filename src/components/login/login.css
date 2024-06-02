@@ -28,6 +28,7 @@
     padding: 2rem;
     border-radius: 10px;
     width: 30%;
+    box-shadow: none;
     border: none;
     transition: all 0.3s;
 
