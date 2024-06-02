@@ -42,14 +42,24 @@ function Login() {
 
   return (
     <>
-      <video id='video' src={videoBg} autoPlay muted loop/>
-      <div >
-        <form className="login-form" >
-          <input className='login-input' ref={emailRef} type='text' placeholder='Email' />
-          <input className='login-input' ref={passwordRef} type='password' placeholder='Password' />
+      <video id='video' src={videoBg} autoPlay muted loop />
+      <div className='form-input'>
+        <form>
+          <div className="form-control">
+            <input ref={emailRef} type='text' required />
+            <label>
+              <span style={{ transitionDelay: '0ms' }}>E</span><span style={{ transitionDelay: '50ms' }}>m</span><span style={{ transitionDelay: '100ms' }}>a</span><span style={{ transitionDelay: '150ms' }}>i</span><span style={{ transitionDelay: '200ms' }}>l</span>
+            </label>
+          </div>
+          <div className="form-control">
+            <input ref={passwordRef} type='password' required />
+            <label>
+              <span style={{ transitionDelay: '0ms' }}>P</span><span style={{ transitionDelay: '50ms' }}>a</span><span style={{ transitionDelay: '100ms' }}>s</span><span style={{ transitionDelay: '150ms' }}>s</span><span style={{ transitionDelay: '200ms' }}>w</span><span style={{ transitionDelay: '250ms' }}>o</span><span style={{ transitionDelay: '300ms' }}>r</span><span style={{ transitionDelay: '350ms' }}>d</span>
+            </label>
+          </div>
           <div className='div-btn'>
-            <button className='login-btn' type="button" onClick={signIn}>Login</button>
-            <button className='login-btn' type="button" onClick={register}>Register</button>
+            <button  className='btn' type="button" onClick={signIn}>Login</button>
+            <button  className='btn' type="button" onClick={register}>Register</button>
           </div>
         </form>
       </div>

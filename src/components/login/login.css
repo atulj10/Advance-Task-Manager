@@ -1,65 +1,116 @@
 #video {
     position: fixed;
-    right: 0;
-    bottom: 0;
-    height: 100%;
+    top: 0;
+    left: 0;
     width: 100%;
-    z-index: -1;
+    height: 100%;
     object-fit: cover;
+    z-index: 0;
 }
 
-.login-form {
+.form-input {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    height: 100vh;
+}
+
+form {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    left: 25rem;
-    top: 25%;
-    width: 40%;
-    padding: 5rem;
-    gap: 1rem;
-    z-index: 2;
-    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 30%;
+    border: none;
+    transition: all 0.3s;
 
     &:hover {
-        -webkit-backdrop-filter: blur(100px);
-        backdrop-filter: blur(50px);
+        box-shadow: 10px 10px 90px lightblue;
     }
-
 }
 
+.form-control {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 190px;
+}
 
-.login-input {
-    padding: 0.5rem;
-    border-radius: 5px;
-    border:2px dashed rgb(49, 182, 243);
-    color: rgb(49, 182, 243);
-    transition: all 2s;
-    background: transparent;
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #fff;
+}
 
-    &::placeholder{
-        color: rgb(8, 207, 241);
-    }
+.form-control input:focus,
+.form-control input:valid {
+    outline: 0;
+    border-bottom-color: lightblue;
+}
 
-    &:hover {
-        border-style: solid;
-    }
+.form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+}
+
+.form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    color: #fff;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus+label span,
+.form-control input:valid+label span {
+    color: lightblue;
+    transform: translateY(-30px);
 }
 
 .div-btn {
-    text-align: center;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
 }
 
-.login-btn {
+.btn {
+    background-color: transparent;
+    color: white;
+    border-radius: 10em;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 0.5em 1em;
     cursor: pointer;
-    padding: 0.35rem;
-    margin: 0.3rem;
-    border-radius: 5px;
-    border: 1px solid rgb(8, 207, 241);
-    color: rgb(8, 207, 241);
-    background: transparent;
-    
-    &:hover{
-        background-color: rgb(8, 207, 241);
-        color: white;
-    }
+    transition: all 0.3s ease-in-out;
+    border: 2px solid white;
+    box-shadow: 0 0 0 0 black;
 }
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
+}
+
+;
+
+.btn:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
+}
+
+;
