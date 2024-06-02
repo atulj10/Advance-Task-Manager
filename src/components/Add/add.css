@@ -11,12 +11,18 @@ form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 70%;
+    width: 40%;
     padding: 2% 4%;
     align-items: start;
-    border: 3px solid white;
+    /* border: 3px solid white; */
     background-color: #FF90BC;
     border-radius: 30px;
+    box-shadow: 5px 5px 0 black;
+    transition: all 0.3s ease-in-out;
+    
+    &:hover{
+        box-shadow: 10px 10px 0 black;
+    }
 }
 
 .input {
@@ -89,14 +95,15 @@ label {
     padding: 15% 20%;
     font-size: 0.8rem;
     border-radius: 10px;
-    border: 2px solid white;
+    border: 2px solid #40A578;
     background: transparent;
     font-weight: 100;
-    color: white;
+    color: #40A578;
     transition: all 0.3s ease-in-out;
 
     &:hover {
-        background-color: white;
-        color: rgb(53, 165, 209);
+        background-color: #40A578;
+        color: white;
+        box-shadow: 4px 4px 0 black;
     }
 }

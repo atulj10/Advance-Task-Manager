@@ -44,7 +44,7 @@ function Login() {
     <>
       <video id='video' src={videoBg} autoPlay muted loop />
       <div className='form-input'>
-        <form>
+        <form className='login-form'>
           <div className="form-control">
             <input ref={emailRef} type='text' required />
             <label>
