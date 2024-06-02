@@ -1,14 +1,23 @@
-.content{
+.image-container {
     display: flex;
     flex-direction: column;
     padding-top: 2rem;
     align-items: center;
-    gap: 1rem;
 }
 
-img{
+.gradient {
+    position: relative;
+    bottom: 7rem;
+    color: rgb(245, 113, 135);
+}
+
+img {
     height: 50%;
     width: 50%;
     border-radius: 20px;
-}
+    transition: all 0.3s;
 
+    &:hover {
+        transform: scale(1.05);
+    }
+}

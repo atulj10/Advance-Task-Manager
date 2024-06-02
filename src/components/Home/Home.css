@@ -1,25 +1,224 @@
-.home-container{
+.heading {
+    text-align: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    padding-top: 10%;
+    margin-bottom: 10%;
+    text-align: center;
+    /* gap: 20px; */
 }
 
-.Task-container{
-    flex: 10;
-    margin-left: 2rem;
+.greet {
+    animation: appearIn 1.5s linear forwards;
 }
 
-.dropdown{
-    position: absolute;
-    right: 10rem;
-    top: 5rem;
+.heading-date {
+    position: relative;
+    opacity: 0;
+    animation: leftIn 1.5s ease-in-out 1s forwards;
 }
 
-.filter-icon{
-    padding-right: 0.3rem;
+.heading>h5 {
+    margin: 0;
+    align-self: flex-start;
+    padding-left: 2%;
+    margin-bottom: 5px;
+    font-weight: 500;
+
 }
 
-.select{
+.heading>p {
+    margin: 0;
+    align-self: flex-start;
+    padding-left: 2%;
+    margin-bottom: 8%;
+}
+
+.heading>h1 {
+    margin: 0;
+    font-size: 8.5rem;
+    font-weight: 300;
+}
+
+.heading>h2 {
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 200;
+}
+
+.add-btn-container {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 5%;
+}
+
+.go-down-btn {
+    cursor: pointer;
+    font-size: 3rem;
     background: transparent;
-    border-radius: 20px;
-    padding: 0.25rem;
+    border: none;
+    margin: 5% 0;
+    animation: goDown 1s infinite linear alternate, slideIn 1.5s linear forwards;
+}
+
+.top-btn-container {
+    position: fixed;
+    right: 5%;
+    bottom: 50%;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    bottom: 5%;
+}
+
+.top-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.add-btn {
+    cursor: pointer;
+    font-size: 3rem;
+    font-weight: 100;
+    border-radius: 30%;
+    width: fit-content;
+    padding: 0.5% 1%;
+    border: 4px solid whitesmoke;
+    color: whitesmoke;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    transition: all 0.3s ease-in-out;
+    animation: popUp 1s ease-in-out 0.2s forwards;
+
+    &:hover {
+        color: #31363F;
+        background-color: whitesmoke;
+    }
+}
+
+a {
+    width: 100%;
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* .task-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+.dropdown {
+    cursor: pointer;
+    position: relative;
+    top: -90px;
+    left: 50px;
+}
+
+.dropdown>label {
+    display: flex;
+    gap: 10px;
+    width: fit-content;
+}
+
+.filter-icon {
+    align-self: center;
+    position: relative;
+    left: 95%;
+}
+
+.select {
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.025rem;
+    font-weight: 100;
+    border-radius: 10px;
+    padding: 7% 8%;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: white;
+        color: rgb(66, 233, 233);
+
+    }
+}
+
+select {
+    appearance: none;
+}
+
+.select:focus {
+    outline: none;
+}
+
+.option {
+    cursor: pointer;
+    background: black;
+    border: none;
+}
+
+.task-holder {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@keyframes goDown {
+    0% {
+        position: relative;
+        top: 0;
+    }
+
+    100% {
+        position: relative;
+        top: 20px;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        top: -100px;
+    }
+}
+
+@keyframes appearIn {
+    0% {
+        opacity: 0;
+    }
+}
+
+@keyframes leftIn {
+    0% {
+        left: -1000px;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes popUp {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+
+        opacity: 1;
+        transform: scale(1);
+    }
 }

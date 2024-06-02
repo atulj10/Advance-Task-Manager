@@ -1,7 +1,8 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background-image: url("./assets/893820_O9FG4W0.jpg");
+  background-color: rgb(79, 165, 199);
+  overflow-x: hidden;
 
   &::-webkit-scrollbar {
     display: none;
