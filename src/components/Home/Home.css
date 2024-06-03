@@ -137,6 +137,14 @@ html {
     align-self: center;
     position: relative;
     left: 95%;
+    color:white;
+    
+}
+
+label:hover{
+    .filter-icon{
+        color: black;
+    }
 }
 
 .select {
@@ -153,10 +161,6 @@ html {
     &:hover {
         background-color: white;
         color: black;
-        .option{
-            background-color: white;
-            color: black;
-        }
     }
 }
 
