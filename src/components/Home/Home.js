@@ -9,6 +9,8 @@ import { database } from '../../firebase';
 import Add from '../Add/add';
 import { faAngleDoubleDown, faAngleUp, faPlus, faPlusCircle, faSort } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Toast, ToastContainer } from 'react-bootstrap';
+import toast, { Toaster } from 'react-hot-toast';
 
 function Home() {
     const user = useSelector(selectUser);
@@ -66,6 +68,7 @@ function Home() {
             const deleteVal = doc(database, user.email, taskId);
             await deleteDoc(deleteVal);
             setTasks(prevTasks => prevTasks.filter(task => task.id !== taskId));
+            toast.success("Task Deleted! ")
         } catch (error) {
             console.error('Error deleting document: ', error);
         }
@@ -73,6 +76,7 @@ function Home() {
 
     const handleTaskAdded = () => {
         getData()
+        toast.success("Task Added successfully! ")
     }
 
     const handleFilter = (e) => {
@@ -82,12 +86,13 @@ function Home() {
 
     return (
         <>
+        <Toaster/>
             <Nav className="navbar" />
             <div id="top" className='heading'>
                 <h5 className='heading-date'>Today's</h5>
                 <p className='heading-date'>{date.toDateString()}</p>
                 <h1 className='greet'>GOOD</h1>
-                <h2  className='greet'>{getTimeOfDay()} !</h2>
+                <h2 className='greet'>{getTimeOfDay()} !</h2>
                 <a id='add' href='#home'><button className='go-down-btn'><FontAwesomeIcon icon={faAngleDoubleDown} /></button></a>
             </div>
             <div id='home' className='home-container'>
