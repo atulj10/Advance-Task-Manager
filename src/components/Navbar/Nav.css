@@ -17,7 +17,7 @@
 }
 
 .dark {
-  color: black;
+  color: white;
 }
 
 .navbar-user {
@@ -28,6 +28,7 @@
   font-size: 1.25rem;
   font-weight: 300;
   margin: 0;
+  
 }
 
 .navbar-button {
@@ -44,7 +45,7 @@
 
 .link {
   align-self: center;
-  color: white;
+  color: #31363F;
   width: 65px;
   text-align: center;
   text-decoration: none;
@@ -90,15 +91,15 @@
   background: transparent;
   padding: 3% 6%;
   font-size: 0.75rem;
-  border: 2px solid #C40C0C;
-  color: #cf2626;
+  border: 2px solid #CD5D7D;
+  color: #CD5D7D;
   border-radius: 10px;
   margin: 0 2%;
   transition: all 0.3s ease-in-out;
 
   &:hover {
     border-radius: 20px;
-    background-color: #C40C0C;
+    background-color: #CD5D7D;
     color: white;
     box-shadow: 3px 3px 0 black;
   }

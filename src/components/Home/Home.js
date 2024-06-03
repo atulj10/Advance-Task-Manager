@@ -83,15 +83,16 @@ function Home() {
     return (
         <>
             <Nav className="navbar" />
-            <div className='heading'>
+            <div id="top" className='heading'>
                 <h5 className='heading-date'>Today's</h5>
                 <p className='heading-date'>{date.toDateString()}</p>
                 <h1 className='greet'>GOOD</h1>
-                <h2 id="add" className='greet'>{getTimeOfDay()} !</h2>
-                <a href='#home'><button className='go-down-btn'><FontAwesomeIcon icon={faAngleDoubleDown} /></button></a>
+                <h2  className='greet'>{getTimeOfDay()} !</h2>
+                <a id='add' href='#home'><button className='go-down-btn'><FontAwesomeIcon icon={faAngleDoubleDown} /></button></a>
             </div>
             <div id='home' className='home-container'>
                 <div className='Task-container'>
+                    {add && <Add taskAdded={handleTaskAdded} setAdd={setAdd} />}
                     <div className='dropdown'>
                         <label>
                             <FontAwesomeIcon className='filter-icon' icon={faSort} />
@@ -102,7 +103,6 @@ function Home() {
                             </select>
                         </label>
                     </div>
-                    {add && <Add taskAdded={handleTaskAdded} setAdd={setAdd} />}
                     <div className='task-holder'>
                         {tasks.map((task) => (
                             <Task key={task.id} taskId={task.id} title={task.title} description={task.description} date={task.date} onDelete={handleDeleteTask} />

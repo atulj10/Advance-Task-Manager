@@ -67,10 +67,12 @@
     position: fixed;
     right: 5%;
     bottom: 50%;
+    cursor: pointer;
     /* width: 100%; */
     display: flex;
     justify-content: center;
     bottom: 5%;
+
 }
 
 .top-btn {
@@ -78,6 +80,7 @@
     border: none;
     color: white;
     font-size: 2.5rem;
+    
 }
 
 .add-btn {
@@ -137,8 +140,8 @@ html {
 .select {
     cursor: pointer;
     background: transparent;
-    border: 2px solid white;
-    color: white;
+    border: 2px solid black;
+    color: black;
     font-size: 1.025rem;
     font-weight: 100;
     border-radius: 10px;
@@ -146,9 +149,12 @@ html {
     transition: all 0.3s ease;
 
     &:hover {
-        background-color: white;
-        color: rgb(66, 233, 233);
-
+        background-color: black;
+        color: white;
+        .option{
+            background-color: black;
+            color: white;
+        }
     }
 }
 
@@ -162,7 +168,7 @@ select {
 
 .option {
     cursor: pointer;
-    background: black;
+    background: white;
     border: none;
 }
 

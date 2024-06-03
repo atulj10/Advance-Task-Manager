@@ -34,12 +34,12 @@ function Nav() {
       </div>
       <div className='navbar-button'>
         <Link to='/' className={`link home`}>
-          <FontAwesomeIcon className='nav-btn home-nav' icon={faHome} />
-          <span className='home-text'>HOME</span>
+          <FontAwesomeIcon className={`nav-btn ${scroll && "dark"} home-nav`} icon={faHome} />
+          <span className={`home-text ${scroll && "dark"} `}>HOME</span>
         </Link>
-        <Link to='/guide' className={`link guide`}>
-          <FontAwesomeIcon className='nav-btn guide-nav' icon={faBriefcase} />
-          <span className='guide-text'>GUIDE</span>
+        <Link to='/' className={`link guide ${scroll && "dark"}`}>
+          <FontAwesomeIcon className={`nav-btn ${scroll && "dark"} guide-nav`} icon={faBriefcase} />
+          <span className={`guide-text ${scroll && "dark"} `}>GUIDE</span>
         </Link>
         <button onClick={() => auth.signOut()} className='signout'>SignOut</button>
       </div>
