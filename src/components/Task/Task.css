@@ -9,10 +9,11 @@
     border-radius: 40px;
     margin-bottom: 0;
     transition: all 0.5s ease-in-out;
-    max-height: 90px; 
+    max-height: 50px; 
     padding-top: 0rem;
     overflow: hidden;
-    background-color: #F3B95F;
+    color: white;
+    background-color: #4D869C;
     box-shadow: 5px 5px 0 black;
 }
 
@@ -25,7 +26,7 @@
 
 .title>h1{
     font-weight: 300;
-
+    font-size: 2rem;
 }
 
 .delete {
@@ -33,15 +34,15 @@
     margin-top: 0.75rem;
     border-radius: 10px;
     padding: 0.5rem;
-    border: 2px solid red;
+    border: 2px solid white;
     background: transparent;
-    color: red;
+    color: white;
     transition: all 0.3s ease-in-out; 
 }
 
 .delete:hover {
-    background-color: red;
-    color: white;
+    background-color: white;
+    color: black;
     border-radius: 20px;
     box-shadow: 3px 3px 0 black;
 }

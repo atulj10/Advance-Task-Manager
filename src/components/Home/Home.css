@@ -5,6 +5,7 @@
     padding-top: 10%;
     margin-bottom: 10%;
     text-align: center;
+    color: white;
     /* gap: 20px; */
 }
 
@@ -60,6 +61,7 @@
     background: transparent;
     border: none;
     margin: 5% 0;
+    color: white;
     animation: goDown 1s infinite linear alternate, slideIn 1.5s linear forwards;
 }
 
@@ -140,8 +142,8 @@ html {
 .select {
     cursor: pointer;
     background: transparent;
-    border: 2px solid black;
-    color: black;
+    border: 2px solid white;
+    color: white;
     font-size: 1.025rem;
     font-weight: 100;
     border-radius: 10px;
@@ -149,11 +151,11 @@ html {
     transition: all 0.3s ease;
 
     &:hover {
-        background-color: black;
-        color: white;
+        background-color: white;
+        color: black;
         .option{
-            background-color: black;
-            color: white;
+            background-color: white;
+            color: black;
         }
     }
 }
@@ -170,6 +172,7 @@ select {
     cursor: pointer;
     background: white;
     border: none;
+    color: black;
 }
 
 .task-holder {

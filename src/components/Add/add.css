@@ -14,8 +14,9 @@ form {
     width: 40%;
     padding: 2% 4%;
     align-items: start;
+    color: white;
     /* border: 3px solid white; */
-    background-color: #A34343;
+    background-color: #4D869C;
     border-radius: 30px;
     box-shadow: 5px 5px 0 black;
     transition: all 0.3s ease-in-out;
@@ -71,6 +72,7 @@ form {
     cursor: pointer;
     position: relative;
     top: 0;
+    color: white;
     /* width: 100%; */
     /* opacity: 0; */
     background-color: transparent;
@@ -95,15 +97,15 @@ label {
     padding: 15% 20%;
     font-size: 0.8rem;
     border-radius: 10px;
-    border: 2px solid #4793AF;
+    border: 2px solid white;
     background: transparent;
     font-weight: 100;
-    color: #4793AF;
+    color: white;
     transition: all 0.3s ease-in-out;
 
     &:hover {
-        background-color: #4793AF;
-        color: white;
+        background-color: white;
+        color: black;
         box-shadow: 4px 4px 0 black;
     }
 }
